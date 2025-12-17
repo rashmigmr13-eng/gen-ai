@@ -17,7 +17,7 @@ pipeline {
         stage('checkout') {
             steps {
                 dir("terraform") {
-                    git branch: 'infra',
+                    git branch: 'main',
                         url: 'https://github.com/rashmigmr13-eng/gen-ai.git'
                 }
             }
